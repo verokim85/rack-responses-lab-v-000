@@ -3,10 +3,12 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    t = Kernel.rand(1..24)
+    now = Time.now
+    a_day_ago = now - 60 * 60 * 24
+    random_time = rand(a_day_ago..now)
 
 
-    if t<= 12
+    if t <= 12
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"

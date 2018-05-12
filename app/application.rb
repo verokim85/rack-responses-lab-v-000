@@ -8,7 +8,7 @@ class Application
     random_time = rand(a_day_ago..now)
 
 
-    if t <= 12
+    if random_time <= 12
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"

@@ -5,10 +5,10 @@ class Application
 
     now = Time.now
     a_day_ago = now - 60 * 60 * 24
-    random_time = rand(now)
+    random_time = rand(a_day_ago..now)
 
 
-    if random_time <= 12 PM
+    if random_time <= 12PM
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"

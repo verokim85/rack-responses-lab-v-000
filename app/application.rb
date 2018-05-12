@@ -5,7 +5,7 @@ class Application
 
     now = Time.now
     a_day_ago = now - 60 * 60 * 24
-    random_time = rand(a_day_ago..now)
+    random_time = rand(now)
 
 
     if random_time <= 12 PM

@@ -3,7 +3,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    t = Time.now
+    t = Kernal.rand(1..24)
 
 
     if t.hour <= 12PM

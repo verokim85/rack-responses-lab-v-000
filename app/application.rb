@@ -6,7 +6,7 @@ class Application
     t = Kernal.rand(1..24)
 
 
-    if t.hour <= 12PM
+    if t.hour <= 12
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"

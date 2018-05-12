@@ -5,7 +5,7 @@ class Application
 
     now = Time.now
 
-    if random_time <= 12 PM
+    if random_time >= 12 
       resp.write "Good Morning!"
     else
       resp.write "Good Afternoon!"
